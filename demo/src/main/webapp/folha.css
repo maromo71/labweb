@@ -1,0 +1,10 @@
+table {
+    border: solid 2px black;
+    display: block;
+    font-family: Arial, sans-serif, "Comic Sans MS";
+    font-size: medium;
+}
+thead {
+    background-color: aquamarine;
+    font-size: larger;
+}
