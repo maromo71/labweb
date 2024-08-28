@@ -1,0 +1,64 @@
+body {
+    margin: 0; /* Removendo a margem */
+    padding: 0; /* Removendo o preenchimento */
+    font-family: Arial, Arial, Helvetica, sans-serif; /* Definindo a fonte */
+    display: flex; /* utilizando o flexbox */
+    flex-direction: column; /* Alinhar os elementos em uma colunas */
+    min-height: 100vh; /* garante que a página tenha a altura mínima da página */
+}
+
+header {
+    background-color: #333; /* Definindo a cor do fundo */
+    color: white; /* cor branca */
+    text-align: center; /* centraliza o texto */
+    padding: 1rem 0; /* Espacamento interior (superior e inferior) */ 
+}
+
+nav {
+    background-color: #f4f4f4; /* Definindo a cor do fundo */
+    padding: 1 rem; /* Espacamento interno ao redor do conteúdo*/
+    width: 200px; /* Largura fixa do menu */
+    flex-shrink: 0; /* Reduzindo o espaçamento do menu (evita encolher)*/
+}
+
+main {
+    flex-grow: 1; /* Permite que o conteudo ocupe o espaco disponvivel */
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav ul {
+    
+    list-style: none; /* Removendo os pontos da lista */
+    padding: 0 0 0 20px; /* Removendo o espacamento interno */
+}
+
+nav ul li{
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none; /* Removendo o sublinhado */
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.content {
+    margin-left: 20px;
+}
