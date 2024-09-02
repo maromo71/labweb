@@ -1,3 +1,4 @@
+/* Estilos gerais (para resoluções menores, incluindo o iPhone 11) */
 body {
     margin: 0; /* Removendo a margem */
     padding: 0; /* Removendo o preenchimento */
@@ -16,7 +17,7 @@ header {
 
 nav {
     background-color: #f4f4f4; /* Definindo a cor do fundo */
-    padding: 1 rem; /* Espacamento interno ao redor do conteúdo*/
+    padding: 1rem; /* Espacamento interno ao redor do conteúdo*/
     width: 200px; /* Largura fixa do menu */
     flex-shrink: 0; /* Reduzindo o espaçamento do menu (evita encolher)*/
 }
@@ -41,12 +42,11 @@ footer {
 }
 
 nav ul {
-    
     list-style: none; /* Removendo os pontos da lista */
     padding: 0 0 0 20px; /* Removendo o espacamento interno */
 }
 
-nav ul li{
+nav ul li {
     margin: 10px 0;
 }
 
@@ -61,4 +61,45 @@ nav ul li a:hover {
 
 .content {
     margin-left: 20px;
+}
+
+/* Estilos para resoluções maiores que a do iPhone 11 (largura acima de 414px) */
+@media only screen and (min-width: 415px) {
+    body {
+        font-size: 18px; /* Aumentando o tamanho da fonte */
+    }
+
+    header {
+        padding: 1.5rem 0; /* Aumentando o espaçamento no cabeçalho */
+        font-size: 1.5rem; /* Aumentando o tamanho da fonte no cabeçalho */
+    }
+
+    nav {
+        width: 250px; /* Aumentando a largura do menu de navegação */
+        padding: 1.5rem; /* Aumentando o espaçamento interno */
+    }
+
+    main {
+        padding: 1.5rem; /* Aumentando o padding do conteúdo principal */
+    }
+
+    footer {
+        padding: 1.5rem 0; /* Aumentando o espaçamento no rodapé */
+    }
+
+    .content {
+        margin-left: 30px; /* Aumentando a margem à esquerda do conteúdo principal */
+    }
+
+    nav ul {
+        padding: 0 0 0 30px; /* Aumentando o espaçamento interno na lista de navegação */
+    }
+
+    nav ul li {
+        margin: 15px 0; /* Aumentando o espaçamento entre os itens da lista */
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; /* Aumentando o tamanho da fonte dos links */
+    }
 }
