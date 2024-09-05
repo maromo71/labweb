@@ -1,0 +1,16 @@
+.header{
+    background-color: #456280;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #456280;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
