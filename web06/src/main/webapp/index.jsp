@@ -15,5 +15,8 @@
 <p>
     <a href="listaJogadores.jsp">Listar Jogadores</a>
 </p>
+<p>
+    <a href="cadastrarJogador.jsp">Cadastrar Jogador</a>
+</p>
 </body>
 </html>
