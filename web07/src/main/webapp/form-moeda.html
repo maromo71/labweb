@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversao de Moedas</title>
+</head>
+<body>
+    <form method="post" action="calc-moeda.jsp">
+        <p>Moeda atual: <strong>Real</strong></p>
+        <p>
+            <label for="moeda_convertida">Escolha a Moeda</label>
+            <select name="moeda_convertida" id="moeda_convertida">
+                <option value="EURO">EURO</option>
+                <option  value="DOLAR">DOLAR</option>
+            </select>
+        </p>
+        <p>
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" name="valor"
+                   step="0.01" min="0" placeholder="0.00">
+        </p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
